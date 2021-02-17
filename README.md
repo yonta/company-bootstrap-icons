@@ -1,18 +1,19 @@
+# company-bootstrap-icons
 
-Emacs company backend for bootstrap 4 version
+Emacs company backend for Bootstrap Icons 1.4.0 version
 
-# Look at the examples
+## Look at the examples
 
 ![Screenshot](https://typefo.com/assets/img/company-bootstrap-example.jpg)
 
-# how to install?
+## how to install?
 
 ### Manual installation
 
 1. Download this package
 
 ```
-$ git clone https://github.com/typefo/company-bootstrap.git
+$ git clone https://github.com/yonta/company-bootstrap.git
 ```
 
 2. Copy it to the emacs autoload directory
@@ -21,23 +22,7 @@ $ git clone https://github.com/typefo/company-bootstrap.git
 $ cp -R company-bootstrap ~/.emacs.d/lisp
 ```
 
-### Use the elpa repository to automate installation
-
-1. Edit your ~/.emacs configuration file and Add a repository source for emacs
-
-```
-(add-to-list 'package-archives
-         '("elpa" . "https://elpa.typefo.com/packages/") t)
-```
-
-2. Use the `Alt + x` key, Execute the `package-install` command in Emacs to install
-
-```
-M-x> package-install
-Install package: company-bootstrap
-```
-
-# How can I configure to use it?
+## How can I configure to use it?
 
 First you make sure you have the `company` package installed
 
@@ -52,7 +37,7 @@ Then add the following content to the emacs configuration file
   '(add-to-list 'company-backends 'company-bootstrap))
 ```
 
-# How to enable only in html mode?
+## How to enable only in html mode?
 
 Html defaults to `nxml-mode` in emacs, Just add a hook to it
 
