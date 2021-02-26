@@ -45,3 +45,9 @@ Html defaults to `nxml-mode` in emacs, Just add a hook to it
 (add-hook 'nxml-mode-hook '(lambda ()
             (add-to-list 'company-backends 'company-bootstrap)))
 ```
+
+## Original repository
+
+This repository is fork repository from
+[company-bootstrap](https://github.com/typefo/company-bootstrap).
+Original is made by typefo.
