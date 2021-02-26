@@ -1,11 +1,11 @@
-;;; company-bootstrap.el --- A company backend for bootstrap.
+;;; company-bootstrap-icons.el --- A company backend for bootstrap icons.
 
 ;; Copyright (C) 2019 typefo
 
-;; Author: typefo <typefo@hotmail.com>
-;; URL: https://github.com/typefo/company-bootstrap
+;; Author: SAITOU Keita <keita44.f4@gmail.com>
+;; URL: https://github.com/yonta/company-bootstrap-icons
 ;; Package-Requires: ((emacs "24.3") (company "0.9.10"))
-;; Version: 4.3.1
+;; Version: 1.4.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -22,36 +22,29 @@
 
 ;;; Commentary:
 
-;; This a company backend for twitter bootstrap
+;; This a company backend for twitter bootstrap icons
+;; See README for more details.
 
 ;;; Code:
 
 (require 'cl-lib)
 (require 'company)
-(require 'company-bootstrap-completions)
+(require 'company-bootstrap-icons-completions)
 
-(defconst company-bootstrap-version "4.3.1")
+(defconst company-bootstrap-icons-version "1.4.0")
 
 ;;;###autoload
-(defun company-bootstrap (command &optional arg &rest ignored)
-  "Company backend for Bootstrap."
+(defun company-bootstrap-icons (command &optional arg &rest ignored)
+  "Company backend for Bootstrap Icons."
   (interactive (list 'interactive))
   (cl-case command
-    (interactive (company-begin-backend 'company-bootstrap))
+    (interactive (company-begin-backend 'company-bootstrap-icons))
     (prefix (company-grab-symbol))
     (candidates
      (cl-remove-if-not
       (lambda (c) (string-prefix-p arg c))
-      company-bootstrap-completions)))
-  )
+      company-bootstrap-icons-completions))))
 
-;;;###autoload
-(defun company-bootstrap-init ()
-  "Init company bootstrap backend."
-  (interactive)
-  (add-to-list 'company-backends 'company-bootstrap)
-  )
+(provide 'company-bootstrap-icons)
 
-(provide 'company-bootstrap)
-
-;;; company-bootstrap.el ends here
+;;; company-bootstrap-icons.el ends here
