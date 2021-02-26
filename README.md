@@ -4,7 +4,7 @@ Emacs company backend for Bootstrap Icons 1.4.0 version
 
 ## Look at the examples
 
-![Screenshot](https://typefo.com/assets/img/company-bootstrap-example.jpg)
+![Screenshot](https://raw.githubusercontent.com/yonta/company-bootstrap-icons/main/screenshot.png)
 
 ## how to install?
 
