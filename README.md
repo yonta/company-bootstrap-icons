@@ -13,13 +13,13 @@ Emacs company backend for Bootstrap Icons 1.4.0 version
 1. Download this package
 
 ```
-$ git clone https://github.com/yonta/company-bootstrap.git
+$ git clone https://github.com/yonta/company-bootstrap-icons.git
 ```
 
 2. Copy it to the emacs autoload directory
 
 ```
-$ cp -R company-bootstrap ~/.emacs.d/lisp
+$ cp -R company-bootstrap-icons ~/.emacs.d/lisp
 ```
 
 ## How can I configure to use it?
@@ -34,7 +34,7 @@ Then add the following content to the emacs configuration file
 
 ```
 (eval-after-load "company"
-  '(add-to-list 'company-backends 'company-bootstrap))
+  '(add-to-list 'company-backends 'company-bootstrap-icons))
 ```
 
 ## How to enable only in html mode?
@@ -43,7 +43,7 @@ Html defaults to `nxml-mode` in emacs, Just add a hook to it
 
 ```
 (add-hook 'nxml-mode-hook '(lambda ()
-            (add-to-list 'company-backends 'company-bootstrap)))
+            (add-to-list 'company-backends 'company-bootstrap-icons)))
 ```
 
 ## Original repository
