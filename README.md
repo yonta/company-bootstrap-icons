@@ -46,6 +46,13 @@ Html defaults to `nxml-mode` in emacs, Just add a hook to it
             (add-to-list 'company-backends 'company-bootstrap-icons)))
 ```
 
+If you use `web-mode` and `company-web-html`, just like this
+
+``` emacs-lisp
+(add-to-list `company-backends
+             `(company-web-html :with company-bootstrap-icons))
+```
+
 ## Original repository
 
 This repository is fork repository from
